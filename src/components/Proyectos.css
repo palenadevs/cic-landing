@@ -1,0 +1,63 @@
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px 24px;
+  margin-top: 56px;
+}
+
+/* los dos primeros van más grandes para que la fila no quede pareja */
+.proyecto {
+  grid-column: span 2;
+}
+
+.proyecto:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.proyecto__visual {
+  aspect-ratio: 4 / 3;
+  background: var(--papel);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radio);
+}
+
+.proyecto:nth-child(-n + 2) .proyecto__visual {
+  aspect-ratio: 16 / 10;
+}
+
+.proyecto h3 {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.proyecto p {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--navy-400);
+}
+
+@media (max-width: 1040px) {
+  .proyectos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proyecto,
+  .proyecto:nth-child(-n + 2) {
+    grid-column: span 1;
+  }
+
+  .proyecto:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 560px) {
+  .proyectos {
+    grid-template-columns: 1fr;
+  }
+
+  .proyecto:nth-child(-n + 2) .proyecto__visual {
+    aspect-ratio: 4 / 3;
+  }
+}
