@@ -1,0 +1,97 @@
+.plano {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--tinta, var(--navy-400));
+  fill: none;
+  stroke: currentColor;
+  stroke-linejoin: round;
+}
+
+.plano text {
+  fill: currentColor;
+  stroke: none;
+  font-family: var(--font-brand);
+  font-size: 11px;
+  text-anchor: middle;
+  font-variant-numeric: tabular-nums;
+}
+
+.plano__curvas {
+  stroke-width: 0.75;
+  opacity: 0.22;
+}
+
+.plano__calle path {
+  stroke-width: 1;
+  opacity: 0.7;
+}
+
+.plano__calle .plano__eje {
+  stroke-dasharray: 10 8;
+  opacity: 0.4;
+}
+
+.plano__calle text {
+  /* el trazo del color de fondo corta la línea del eje detrás del nombre */
+  paint-order: stroke;
+  stroke: var(--fondo-plano, var(--papel));
+  stroke-width: 8px;
+  stroke-linejoin: round;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+.plano__lote path {
+  stroke-width: 1;
+  opacity: 0.75;
+}
+
+.plano__lote text {
+  opacity: 0.6;
+}
+
+.plano__lote--destacado path {
+  fill: var(--destacado, var(--cic-gold));
+  fill-opacity: 0.16;
+  stroke: var(--destacado, var(--cic-gold));
+  stroke-width: 1.5;
+  opacity: 1;
+}
+
+.plano__lote--destacado text {
+  fill: var(--destacado, var(--cic-gold));
+  font-weight: 600;
+  opacity: 1;
+}
+
+.plano__limite {
+  stroke-width: 1.5;
+}
+
+.plano__vecino {
+  stroke-width: 0.75;
+  opacity: 0.45;
+}
+
+.plano__retiro {
+  stroke-width: 0.75;
+  stroke-dasharray: 4 4;
+  opacity: 0.6;
+}
+
+.plano__norte {
+  stroke-width: 1;
+  opacity: 0.7;
+}
+
+.plano__norte text {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.plano--portada text {
+  font-size: 12px;
+}
