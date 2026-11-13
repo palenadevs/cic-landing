@@ -3,6 +3,8 @@ import Portada from './components/Portada.jsx'
 import Nosotros from './components/Nosotros.jsx'
 import Servicios from './components/Servicios.jsx'
 import Proyectos from './components/Proyectos.jsx'
+import Contacto from './components/Contacto.jsx'
+import Pie from './components/Pie.jsx'
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <Nosotros />
       <Servicios />
       <Proyectos />
+      <Contacto />
+      <Pie />
     </>
   )
 }
