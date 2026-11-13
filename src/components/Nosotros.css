@@ -1,0 +1,36 @@
+.nosotros {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.ventajas {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--navy-1000);
+}
+
+.ventajas li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--navy-1000);
+}
+
+.ventajas .material-symbols-outlined {
+  flex: none;
+  width: 28px;
+  font-size: 28px;
+  color: var(--navy-400);
+}
+
+@media (max-width: 860px) {
+  .nosotros {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
