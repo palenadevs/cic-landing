@@ -25,10 +25,10 @@ export default function App() {
       <main id="inicio">
         <Hero />
         <Comprar />
-        <Terrenos alConsultar={consultar} />
         <Golf />
         <Asheville />
         <Zona />
+        <Terrenos alConsultar={consultar} />
         <Asesoria />
         <Contacto terreno={terreno} alCambiarTerreno={setTerreno} />
       </main>

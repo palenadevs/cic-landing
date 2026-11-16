@@ -103,8 +103,8 @@ export const SERVICIOS = [
 ]
 
 export const MENU = [
-  ['#terrenos', 'Terrenos'],
   ['#asheville', 'Asheville'],
   ['#zona', 'La zona'],
+  ['#terrenos', 'Terrenos'],
   ['#asesoria', 'Asesoría'],
 ]
