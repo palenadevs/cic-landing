@@ -1,0 +1,52 @@
+.comprar {
+  background: var(--beige-50);
+}
+
+.comprar__grilla {
+  display: grid;
+  gap: 40px;
+}
+
+.pilares {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.pilares li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.respuestas {
+  display: grid;
+  gap: 16px;
+}
+
+.respuesta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  background: var(--blanco);
+  border: 1px solid var(--azul-100);
+  border-radius: var(--radio);
+}
+
+.respuesta h3 {
+  font-size: 1.25rem;
+}
+
+.respuesta p {
+  color: var(--azul-700);
+}
+
+@media (min-width: 960px) {
+  .comprar__grilla {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: center;
+  }
+}

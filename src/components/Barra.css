@@ -1,0 +1,57 @@
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: var(--barra);
+  padding: 0 20px;
+  background: var(--blanco);
+  border-bottom: 1px solid var(--azul-100);
+}
+
+.barra__logo img {
+  width: 150px;
+}
+
+.barra__menu {
+  display: none;
+}
+
+.barra .boton--chico {
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 960px) {
+  .barra {
+    padding: 0 max(32px, calc((100% - var(--ancho)) / 2 + 32px));
+  }
+
+  .barra__logo img {
+    width: 180px;
+  }
+
+  .barra__menu {
+    display: flex;
+    gap: 28px;
+  }
+
+  .barra__menu a {
+    color: var(--azul-900);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .barra__menu a:hover {
+    color: var(--verde-500);
+  }
+
+  .barra .boton--chico {
+    padding: 8px 20px;
+    font-size: 0.875rem;
+  }
+}

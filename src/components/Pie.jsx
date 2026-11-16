@@ -1,34 +1,18 @@
-import logoBlanco from '../assets/logo-blanco.png'
-import { CORREO, NAV } from '../data.js'
+import { PENDIENTES } from '../data.js'
+import Logo from './Logo.jsx'
+import Marcador from './Marcador.jsx'
 import './Pie.css'
 
 export default function Pie() {
   return (
     <footer className="pie">
-      <div className="wrap pie__grid">
-        <a href="#inicio" className="pie__logo">
-          <img className="logo" src={logoBlanco} alt="Carolina International Capital" width="200" height="56" />
-        </a>
-
-        <div>
-          <h2>Enlaces rápidos</h2>
-          <ul>
-            {NAV.map(({ etiqueta, href }) => (
-              <li key={href}><a href={href}>{etiqueta}</a></li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h2>Contacto</h2>
-          <ul>
-            <li className="pie__correo"><a href={`mailto:${CORREO}`}>{CORREO}</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="wrap">
-        <p className="pie__base">© 2026 Carolina International Capital. Todos los derechos reservados.</p>
+      <div className="contenedor">
+        <Logo blanco className="pie__logo" />
+        <p>Terrenos en Asheville, Carolina del Norte, EE. UU.</p>
+        <p className="pie__legal">
+          <Marcador valor={PENDIENTES.textoLegal} texto="textos legales por confirmar" />
+        </p>
+        <p className="pie__copy">© 2026 Carolina International Capital.</p>
       </div>
     </footer>
   )

@@ -1,6 +1,6 @@
 # Carolina International Capital
 
-Landing de Carolina International Capital, construida con Vite y React.
+Landing "Invertir en Asheville, NC" de Carolina International Capital, construida con Vite y React.
 
 ## Comandos
 
@@ -16,10 +16,22 @@ Generar el build de producción:
 
     npm run build
 
-## Fotos
+## Estructura
 
-Las fotos se cargan en `src/data.js`. Mientras estén en `null`, la portada y los proyectos muestran un plano dibujado en `Plano.jsx`, y servicios y contacto se arman sin foto. Para poner una, guardar el archivo en `src/assets`, importarlo en `data.js` y reemplazar el `null`.
+- `src/data.js`: todo el contenido (hero, terrenos, actividades, servicios). Los datos que el
+  cliente todavía no confirma van en `PENDIENTES` como `null` y la página muestra un marcador
+  punteado en su lugar. Para completarlos basta reemplazar el `null` por el texto.
+- `src/components/`: una sección por componente, con su CSS al lado.
+- `src/utils/`: formato de números (estilo chileno), validaciones del formulario y el envío.
+- `public/images` y `public/fonts`: fotos, logos y Poppins en TTF.
+
+## Deploy
+
+Se publica en GitHub Pages con el workflow de `.github/workflows`. La base `/cic-landing/` se
+configura en `vite.config.js`; las rutas a `public/` pasan por `publico()` en `src/utils/rutas.js`
+para respetarla.
 
 ## Pendiente
 
-El formulario de contacto todavía no envía a ningún lado.
+- El formulario de contacto todavía no envía a ningún lado (`src/utils/enviar.js` simula el envío).
+- La página lleva `noindex` en `index.html` mientras sea una vista previa. Quitarlo al publicar.

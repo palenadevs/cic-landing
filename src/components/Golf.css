@@ -1,0 +1,43 @@
+.golf {
+  background: var(--verde-100);
+}
+
+.golf__grilla {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.golf__icono {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--verde-500);
+  color: var(--blanco);
+}
+
+.golf__icono .icono {
+  width: 52px;
+  height: 52px;
+}
+
+.golf p {
+  max-width: 40em;
+  color: var(--azul-800);
+}
+
+.golf__nota {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+@media (min-width: 640px) {
+  .golf__grilla {
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+  }
+}

@@ -1,0 +1,21 @@
+.asheville {
+  background: var(--blanco);
+}
+
+.asheville__grilla {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.asheville__foto {
+  width: 100%;
+  border-radius: var(--radio);
+}
+
+@media (min-width: 960px) {
+  .asheville__grilla {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 64px;
+  }
+}

@@ -1,0 +1,42 @@
+.zona {
+  background: var(--beige-50);
+}
+
+.zona__intro {
+  max-width: 40em;
+  margin-bottom: 32px;
+}
+
+.actividades {
+  display: grid;
+  gap: 16px;
+}
+
+.actividad {
+  padding: 22px;
+  background: var(--blanco);
+  border: 1px solid var(--beige-300);
+  border-radius: var(--radio);
+}
+
+.actividad h3 {
+  margin: 14px 0 6px;
+}
+
+.actividad p {
+  color: var(--azul-700);
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 640px) {
+  .actividades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .actividades {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}

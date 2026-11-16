@@ -1,0 +1,133 @@
+.terrenos {
+  background: var(--azul-900);
+  color: var(--blanco);
+  border-radius: 32px 32px 0 0;
+}
+
+.terrenos__intro {
+  color: var(--azul-300);
+  margin-bottom: 32px;
+}
+
+.tarjetas {
+  display: grid;
+  gap: 16px;
+}
+
+.tarjeta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  background: var(--blanco);
+  color: var(--azul-900);
+  border-radius: var(--radio);
+  border-top: 5px solid var(--verde-500);
+}
+
+.tarjeta__sub {
+  min-height: 1.4em;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--azul-500);
+}
+
+.tarjeta h3 {
+  font-size: 1.1875rem;
+  margin-top: 2px;
+}
+
+.tarjeta__datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 18px 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--azul-100);
+  border-bottom: 1px solid var(--azul-100);
+}
+
+.tarjeta__datos dt {
+  font-size: 0.75rem;
+  color: var(--azul-500);
+}
+
+.tarjeta__datos dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.tarjeta__precio {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.tarjeta__boton {
+  margin-top: auto;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 2px solid var(--azul-900);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--azul-900);
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.tarjeta__boton:hover {
+  background: var(--azul-900);
+  color: var(--blanco);
+}
+
+.tarjeta--vendida {
+  background: var(--azul-100);
+  border-top-color: var(--azul-500);
+}
+
+.tarjeta--vendida .tarjeta__precio,
+.tarjeta--vendida .tarjeta__datos dd {
+  color: var(--azul-500);
+}
+
+.tarjeta--vendida .tarjeta__precio {
+  text-decoration: line-through;
+}
+
+.sello {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: var(--azul-900);
+  color: var(--blanco);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .terrenos {
+    border-radius: 0 64px;
+  }
+
+  .tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
