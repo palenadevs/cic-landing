@@ -1,7 +1,6 @@
 .terrenos {
   background: var(--azul-900);
   color: var(--blanco);
-  border-radius: 32px 32px 0 0;
 }
 
 .terrenos__intro {
@@ -40,9 +39,6 @@
 }
 
 .tarjeta__datos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
   margin: 18px 0;
   padding: 14px 0;
   border-top: 1px solid var(--azul-100);
@@ -122,10 +118,6 @@
 }
 
 @media (min-width: 960px) {
-  .terrenos {
-    border-radius: 0 64px;
-  }
-
   .tarjetas {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;

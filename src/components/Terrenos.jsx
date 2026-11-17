@@ -1,5 +1,5 @@
 import { TERRENOS_DISPONIBLES, TERRENOS_ORDENADOS } from '../data.js'
-import { acres, dolares, metros } from '../utils/formato.js'
+import { dolares, metros } from '../utils/formato.js'
 import './Terrenos.css'
 
 export default function Terrenos({ alConsultar }) {
@@ -24,10 +24,6 @@ export default function Terrenos({ alConsultar }) {
                 <div>
                   <dt>Superficie</dt>
                   <dd>{metros(t.m2)}</dd>
-                </div>
-                <div>
-                  <dt>Acres</dt>
-                  <dd>{acres(t.acres)}</dd>
                 </div>
               </dl>
 

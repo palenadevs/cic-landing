@@ -11,7 +11,3 @@ export function numero(valor, decimales = 0) {
 export const dolares = (valor) => `US$ ${numero(valor)}`
 
 export const metros = (valor) => `${numero(valor, Number.isInteger(valor) ? 0 : 1)} m²`
-
-export function acres(valor) {
-  return `${numero(valor, 2).replace(/,?0+$/, '')} ${valor === 1 ? 'acre' : 'acres'}`
-}

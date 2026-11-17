@@ -28,9 +28,10 @@ export const COMPRAR = {
   titulo: 'Comprar en EE. UU. desde Chile',
   puntos: [
     { icono: 'precio', pregunta: '¿Precios?', respuesta: 'Lotes disponibles desde US$ 45.000' },
-    { icono: 'plusvalia', pregunta: '¿Plusvalía?', respuesta: '~15% promedio anual estimado en el área' },
-    { icono: 'tiempo', pregunta: '¿Tiempo?', respuesta: 'Registro a tu nombre en 30-45 días' },
-    { icono: 'garantia', pregunta: '¿Garantía?', respuesta: 'Fondos protegidos por Closing Attorney' },
+    // Respuestas en null: pendientes de definir con el cliente.
+    { icono: 'plusvalia', pregunta: '¿Plusvalía?', respuesta: null },
+    { icono: 'tiempo', pregunta: '¿Tiempo?', respuesta: null },
+    { icono: 'garantia', pregunta: '¿Garantía?', respuesta: null },
   ],
 }
 

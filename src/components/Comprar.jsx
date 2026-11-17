@@ -1,5 +1,6 @@
 import { COMPRAR, PILARES } from '../data.js'
 import Icono from './Icono.jsx'
+import Marcador from './Marcador.jsx'
 import './Comprar.css'
 
 export default function Comprar() {
@@ -29,7 +30,9 @@ export default function Comprar() {
               </span>
               <div>
                 <h3>{punto.pregunta}</h3>
-                <p>{punto.respuesta}</p>
+                <p>
+                  <Marcador valor={punto.respuesta} texto="por definir" />
+                </p>
               </div>
             </li>
           ))}
